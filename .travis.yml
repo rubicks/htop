@@ -14,3 +14,8 @@ script:
   - make distcheck
   - make install
 
+after_success:
+  - echo "big win"
+
+after_failure:
+  - echo "oh noes"
